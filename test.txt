@@ -1,0 +1,39 @@
+
+Description:  
+Develop recipe (uni-directional) which will migrate Magento Customers to ServiceNow Companies [Migration|https://jitterbit.atlassian.net/wiki/display/SOLUTIONS/Migration] 
+
+This recipe migrates all customers from Magento to Service Now Companies. Credentials for Magento and Service Now can be found in the *migrate_magento_customers_to_servicenow_companies-configure.json* file at the provided url.
+
+Steps to test:
+
+* Upload the recipe to CI 
+* Test the connections for Magento and Service Now with valid and invalid credentials 
+* Type "true" in all of the email notification options, and provide your email address as the recipient 
+* Complete the "Initial Data Load" step and confirm that records have integrated, and that accurate summary/data error emails have been received 
+** This integration may take a few hours to complete, because of the amount of records
+
+
+Subversion Revisions:
+
+https://github.com/jitterbit/recipes/tree/master/magento-to-servicenow/customers-to-companies/migrate
+
+Include in Release Notes:
+New recipe for CI
+
+Assignee 
+Ankur Chawla
+
+
+
+
+
+
+Steps to test:
+
+* Upload the recipe to CI 
+* Test the connections for Salesforce and BaseCRM  with valid and invalid credentials 
+* Type "true" in all of the email notification options, and provide your email address as the recipient 
+* Complete the "Review" step and confirm that records have integrated, and that accurate summary/data error emails have been received 
+* Add a new record on Salesforce , after two minutes the new record must be reflected on Basecrm
+** This integration may take a few hours to complete, because of the amount of records
+
